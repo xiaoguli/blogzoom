@@ -1,12 +1,12 @@
 <template>
     <div>
-        <el-dialog title="绑定Token" :visible.sync="show" width="500px">
+        <el-dialog title="绑定密钥" :visible.sync="show" width="500px">
             <el-form :model="tokenForm" ref="tokenForm" label-width="100px">
                 <el-form-item label="GitHub">
                     <el-tag>{{githubUsername}}</el-tag>
                 </el-form-item>
-                <el-form-item prop="token" label="Token" :rules="[{ required: true, message: '请输入accessToken', trigger: 'blur' }]">
-                    <el-input v-model="tokenForm.token" placeholder="请保管好Token"></el-input>
+                <el-form-item prop="token" label="Token" :rules="[{ required: true, message: '请输入密钥', trigger: 'blur' }]">
+                    <el-input v-model="tokenForm.token" placeholder="请保管好密钥"></el-input>
                 </el-form-item>
             </el-form>
 

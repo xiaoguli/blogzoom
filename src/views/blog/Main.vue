@@ -107,7 +107,7 @@
             editBlog(index) {
                 if (!this.token) {
                     this.$message({
-                        message: '请绑定有效的Token',
+                        message: '请绑定有效的密钥',
                         type: 'warning'
                     })
                     return
@@ -133,7 +133,7 @@
             goAdd() {
                 if (!this.token) {
                     this.$message({
-                        message: '请绑定有效的Token',
+                        message: '请绑定有效的密钥',
                         type: 'warning'
                     })
                     return

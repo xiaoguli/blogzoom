@@ -29,16 +29,12 @@ const token = {
                     commit('SET_TOKEN', accessToken)
                     Vue.prototype.$notify({
                         title: '成功',
-                        message: 'Token绑定成功',
+                        message: '密钥绑定成功',
                         type: 'success'
                     })
-                    // Vue.prototype.$message({
-                    //     message: 'Token绑定成功',
-                    //     type: 'success'
-                    // })
                 } else {
                     Vue.prototype.$message({
-                        message: 'Token用户不一致',
+                        message: '密钥错误',
                         type: 'error'
                     })
                 }
@@ -49,7 +45,7 @@ const token = {
         Cancellation({ commit }) {
             commit('REMOVE_TOKEN')
             Vue.prototype.$message({
-                message: 'Token取消绑定',
+                message: '密钥取消绑定',
                 type: 'info'
             })
         },
